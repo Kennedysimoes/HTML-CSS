@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="HTML.ico" type="image/x-icon">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no gitHub</a></p>
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+    <!--O rel serve apenas para dizer aos mecanismos de busca do google que o hypertexto vai levar para um link externo-->
+    <h2>Imagem de link</h2>
+    <img src="link 200.png" alt="Imagem de um link">
+    <!--O _blank serve para abrir uma outra aba fora quando clicar no link-->
+    <h2>Usando links INTERNOS</h2>
+    <p>Clique aqui para ir para a minha <a href="pag02.html" target="_self" rel="next">segunda página</a></p>
+    <!--Em target o self siginica acessar a ancora dentro sem abrir uma nova guia-->
+    <!--Em relativo o next singinica proxima página, mas não necessariamente a que vem em seguida numa ordem-->
+    <h3>Portal de notícias</h3>
+    <p>Você pode também ir para <a href="pagina de noticias/pag03.html" target="_self" rel="next">o portal de notícias</a> do meu site</p>
+
+    <h2>Links para Download</h2>
+    <ul>
+        <li><a href="download/boleto.pdf" download="boleto.pdf" type="application/pdf">Baixar o boleto em PDF</a></li>
+        <li><a href="download/boleto.zip" download="boleto.zip" type="application/zip">Baixar o boleto em ZIP</a></li>
+        
+    </ul>
+</body>
+</html>

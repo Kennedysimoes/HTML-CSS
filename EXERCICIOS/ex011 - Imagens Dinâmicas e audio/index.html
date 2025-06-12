@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="HTML.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <H1>Imagens Dinâmicas</H1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="Imagens/Pequeno.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="Imagens/media.png" type="image/png">
+        <img src="Imagens/grande.png" alt="Imagem garnde">
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5 de duas formas</p>
+
+    <h2>1-Forma simples:</h2>
+    <p>Nessa forma há o risco de o navegador não reproduzir o auido por ser não ser compativel ao único tipo de áudio</p>
+    <audio src="Audio/Youtube.mp3" controls autoplay></audio>
+
+    <h2>2 - Forma composta (Vários tipos de audio):</h2>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="Audio/Youtube.mp3" type="audio/mpeg">
+        <source src="Audio/Youtube.ogg" type="audio/ogg">
+        <source src="Audio/Youtube.wav" type="audio/wav">
+        <p>Infelizmente seu nevegador nao consegue reproduzir áudio. <a href="Audio/Youtube.mp3">Clique aqui para abaixar o audio MP3.</a></p>
+
+        <!--O navegador vai tentar primeiro executar a primeira linha de source, depois a segunda abaixo e por fim a 3º abaixo e caso nenhuma funcione ele mostrará a tag p-->
+
+
+        <!--Para fazer da segunda forma siga os passos:
+        1- Coloque a tag audio e apague o source que vem junto por padrão
+        2- Abra uma linha entre a abertura e fechamento da tag audio
+        3- Coloque primeiro começando no topo o source: src com MP3 colocando sua respectiva midia Type correta.
+        4- Faça o mesmo nas proximas linhas com os arquivos ogg e wav respectivamente.
+        5- Nota: Evite usar arquivos wav que são muito pesados se possivel. Prioridade são audios em MP3
+        6- Abra um paragrafo com a tag <p> e escreva um texto com link de download do audio para caso o navegador não consiga de nehuma forma reproduzir o audio. Esse texto sá vai aparecer se realmente o navegador não consiguir execuatar, caso contrario ele não vaia aparecer
+        7- Dentro da abertura tag audio coloque os seguintes comandos:
+            A)Preload: Forma como vai ser carregado o audio pelo navegador.Tendo 3 tipos:
+                - none: O áudio não é carregado antecipadamente. O navegador espera até que o usuário pressione o botão de reprodução para começar o download e reproduzir o audio.
+                - metadata: Apenas os metadados do arquivo (como duração e informações sobre faixas) são carregados, mas o áudio em si não.
+                - auto: O navegador decide como carregar o arquivo, geralmente buscando o áudio inteiro para uma reprodução mais fluida e a página só é carregada quando o audio é baixado por completo(Ponto negativo)
+        8- Dentro da tag audio coloque o comando controls para habilitar o play/pause e depois coloque o coamndo loop para repetir o audio quando acabar
+        -->
+    </audio>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="HTML.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+            /*
+
+            Medidas absolutas:
+            cm - centrimetro
+            mm - milimetro
+            in - polegada
+            px - pixel (Recomendado pela W3C)
+            pt - ponto (Não recomandado para telas)
+            pc - paica (Não recomandado para telas)
+            
+            Medidas Relativas:
+            em - Medida relativa ao tamanho da fonte atual (M maiusculo) - Recomendado pela W3C
+            ex - Medida relativa ao tamanho da fonte atual (x minusculo)
+            rem - Relativo ao rute (Relativo a fonte configurada no body)
+            vw - Relativo a largura da view port
+            vh - Relativo a altura da view port
+            % - Porcentagem
+
+            16px geralmente = 1em
+
+            weight = peso
+            width = largura
+            height = altura
+            */
+
+            font-size: 32px;
+        }
+
+        h1{
+            /*Shorthand font (ordem):
+            - font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes </h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit nihil autem reprehenderit dolorum? Mollitia iste quo minus obcaecati voluptas omnis natus consectetur veniam cupiditate aut voluptatibus, dicta, nobis ducimus ipsa amet ipsum officiis libero, quis error unde veritatis similique tempora necessitatibus. Modi, inventore minus iusto odio quasi provident blanditiis cumque laudantium nam obcaecati consequatur alias laborum doloribus, ex reiciendis praesentium culpa molestias, distinctio iste magni! Voluptatem assumenda aut amet. Neque nostrum officia sequi odit voluptatem magnam aspernatur enim molestiae quos, accusantium accusamus nisi vel assumenda. Sint corporis, ad quidem labore veritatis alias saepe eius, ducimus voluptatum asperiores harum at temporibus!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias accusantium adipisci iusto quo aut impedit neque similique. Velit, ratione fugiat doloribus fugit necessitatibus suscipit aspernatur dolor molestias sint eos reiciendis!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequatur atque vel quod animi odit repellat. Dolorem vitae numquam cum aspernatur velit labore tenetur illo quae, error eligendi sed natus earum suscipit minus in hic quaerat cupiditate ipsam perferendis unde ratione consectetur animi expedita. Explicabo dolores veritatis reiciendis molestiae voluptatum, est ea porro, nam aliquid, nobis animi ipsam tenetur pariatur eos vitae quis minus odio voluptatibus error fugiat. Fuga cupiditate officiis expedita modi dolorum qui.</p>
+</body>
+</html>

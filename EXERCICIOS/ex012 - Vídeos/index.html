@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="HTML.ico" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio site</p>
+    <h2>1ºForma: com apenas um arquivo local (Risco do navegador não conseguir executar o tipo de formato)</h2>
+    <video src="videos/Meu-video.mp4" width="560" controls></video>
+
+    <h2>2ºForma: Com vários de tipos de formatos diferente numa lista de espera até conseguir executar um deles</h2>
+    <!--Coloque os vídeos do menor para o maior tamanho-->
+    <!--Insira atag video em seguida apague e tag source que vem padrão e em seguida abra uma linha entre a tag video de abertura e fechamento e adicione os source:src -->
+    <video width="560" controls loop poster="imagens/limoes-capa.png">
+        <source src="videos/Meu-video.webm" type="video/webm">
+        <source src="videos/Meu-Video.m4v" type="video/mp4">
+        <source src="videos/Meu-video.mp4" type="video/mp4">
+        <source src="videos/Meu-video.webm" type="video/ogg">
+        <p>Infelizmente seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <h1>Inserindo videos externos</h1>
+    <h2>Inserindo vídeos do Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=1hggdgaZiTzJViJ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>

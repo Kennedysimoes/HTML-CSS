@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem flexivel</h1>
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência &#x1F929</p>
+    <picture>
+        <source media="(max-width:760px )" srcset="Imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width:1250px )" srcset="Imagens/paisagem-m.png" type="image/png">
+        <img src="Imagens/paisagem-g.png" alt="Imagem grande">
+    </picture>
+
+<!--Para colocar imagens que se adaptam ao tamanho da tela basta seguir esses passos:
+1- Coloque a tag picture e depois a imagem maior com a tag img normal.
+2- Por cima da tag img você coloca a imagem média com a tag Source Media Type, onde no lugar de min substitua por max
+3- Na unidade Max coloque a largura da imagem média com mais 50 px
+4- em source digite manualmente o endereço da imagem
+5-em type apos o "image/" coloque a extensão da imagem(png, jpag, etc)
+6- Coloque por cima da tag source da imagem média outro source para a imagem pequena e repita os mesmos passos 2,3 e 4 
+-->
+</body>
+</html>
