@@ -23,24 +23,23 @@
             <section id="email-roxo">
                 <svg xmlns="http://www.w3.org/2000/svg" id="icone-email" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M185-80q-17 0-29.5-12.5T143-122v-105q0-90 56-159t144-88q-40 28-62 70.5T259-312v190q0 11 3 22t10 20h-87Zm147 0q-17 0-29.5-12.5T290-122v-190q0-70 49.5-119T459-480h189q70 0 119 49t49 119v64q0 70-49 119T648-80H332Zm148-484q-66 0-112-46t-46-112q0-66 46-112t112-46q66 0 112 46t46 112q0 66-46 112t-112 46Z"/></svg>
                 <label for="cadastro.php"><!--EMAIL--></label>
-                <input type="email" name="email" id="iemail">
+                <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="seu e-mail" required>
             </section>
 
             <section id="senha-roxa">
-                <p>SENHA DA PESSOA</p>
+                <svg xmlns="http://www.w3.org/2000/svg" id="icone-senha" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-200v-80h800v80H80Zm400-240q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35Zm320 0q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35Z"/></svg>
+                <label for="cadastro.php"><!--SENHA--></label>
+                <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="5" maxlength="10">
             </section>
-
-            <section id="botao-entrar">
-                <p>ENTRAR</p>
+                
+            <input type="submit" value="Entrar" id="botao-enviar">
+            
+            <section id="esquecimento">
+                <p>
+                    <a href="recuperação.html" target="_blank">Esqueci a senha</a> <svg xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="24px" fill="#53aaa7"><path d="M240-400h480v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM880-80 720-240H160q-33 0-56.5-23.5T80-320v-480q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v720ZM160-320h594l46 45v-525H160v480Zm0 0v-480 480Z"/></svg>
+                </p>
             </section>
-
         </form>
-
-
-
-        <section id="botao-esquecimento">
-            <p>Esqueci a senha</p>
-        </section>
 
     </main>
 </body>
