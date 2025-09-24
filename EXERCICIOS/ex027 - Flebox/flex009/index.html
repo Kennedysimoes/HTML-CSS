@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #conteiner{
+            background-color: rgb(226, 142, 73);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .son{
+            background-color: skyblue;
+            padding: 20px;
+            border: 1px solid black;
+            flex-basis: 200px;
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="son" id="i1">A</div>
+        <div class="son" id="i2">Outro conteudo</div>
+        <div class="son" id="i3">C</div>
+        <div class="son" id="i4">Conteudo um pouco maior</div>
+        <div class="son" id="i5">E</div>
+        <div class="son" id="i6">Conteudo maior ainda que vai ocupar mais espaço</div>
+        <div class="son" id="i7">F</div>
+    </div>
+</body>
+</html>
+
