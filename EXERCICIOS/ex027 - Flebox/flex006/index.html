@@ -5,43 +5,39 @@
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Flexible box</title>
     <style>
-        body{
-            background-color: rgb(49, 49, 49);
-        }
-
         #conteiner{
             display: flex;
-            background-color: rgb(197, 155, 17);
-            flex-direction: row;
-            flex-wrap: wrap;
+            background-color: blanchedalmond;
+            flex-flow: row wrap;
+            justify-content: center;
             height: 600px;
-            align-content:space-around;
-            align-items: flex-start;
+            align-items: stretch;
+            align-content: space-around;
+            
         }
 
-        .item{
+        .filho{
             background-color: cadetblue;
             border: 1px solid black;
-            text-align: center;
             padding: 40px;
+            text-align: center;
+            
         }
     </style>
 </head>
 <body>
     <div id="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">H</div>
-        <div class="item">I</div>
-        <div class="item">J</div>
-        <div class="item">K</div>
-        <div class="item">L</div>
-        <div class="item">M</div>
+        <div class="filho">A</div>
+        <div class="filho">B</div>
+        <div class="filho">C</div>
+        <div class="filho">D</div>
+        <div class="filho">E</div>
+        <div class="filho">F</div>
+        <div class="filho">G</div>
+        <div class="filho">H</div>
+        <div class="filho">I</div>
+        <div class="filho">J</div>
+        <div class="filho">K</div>
     </div>
 </body>
 </html>

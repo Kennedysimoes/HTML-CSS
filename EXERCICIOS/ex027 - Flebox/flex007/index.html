@@ -2,60 +2,62 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox</title>
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Flexible box</title>
     <style>
         #conteiner{
-            background-color: rgb(226, 142, 73);
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            background-color: blanchedalmond;
+            flex-flow: row wrap;
+            justify-content: flex-start;      
         }
-        .son{
-            background-color: skyblue;
-            padding: 20px;
+
+        .filho{
+            background-color: cadetblue;
             border: 1px solid black;
-            
-        }
-        #i1{
-            order: 0;
-        }
-        #i2{
-            order: -2;
+            padding: 20px;
+            text-align: center;
         }
 
-        #i3{
-            order: 4;
-        }
-
-        #i4{
-            order: 8;
-        }
-
-        #i5{
-            order: 2;
-        }
-
-        #i6{
+        #f1{
             order: 0;
         }
 
-        #i7{
-            order: -4;
+        #f2{
+            order:-2;
+        }
+
+        #f3{
+            order:4;
+        }
+
+        #f4{
+            order:8;
+        }
+
+        #f5{
+            order:2;
+        }
+        
+        #f6{
+            order:0;
+        }
+
+        #f7{
+            order:-4
         }
 
     </style>
 </head>
 <body>
     <div id="conteiner">
-        <div class="son" id="i1">A</div>
-        <div class="son" id="i2">B</div>
-        <div class="son" id="i3">C</div>
-        <div class="son" id="i4">D</div>
-        <div class="son" id="i5">E</div>
-        <div class="son" id="i6">F</div>
-        <div class="son" id="i7">G</div>
+        <div class="filho" id="f1">A</div>
+        <div class="filho" id="f2">B</div>
+        <div class="filho" id="f3">C</div>
+        <div class="filho" id="f4">D</div>
+        <div class="filho" id="f5">E</div>
+        <div class="filho" id="f6">F</div>
+        <div class="filho" id="f7">G</div>
     </div>
 </body>
 </html>
-
