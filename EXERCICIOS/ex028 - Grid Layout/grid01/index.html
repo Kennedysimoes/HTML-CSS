@@ -2,25 +2,26 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>Flexible box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na prática</title>
     <style>
-        #conteiner{
-            display: flex;
-            flex-direction: row;
-            background-color: lightpink;
+        .container{
+            border: 2px solid blue;
+            display: grid;
+            height: 250px;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+            
         }
-
         .item{
-            border: 1px solid black;
-            text-align: center;
-            background-color: lightskyblue;
+            border: 2px solid red;
             padding: 10px;
         }
     </style>
 </head>
 <body>
-    <div id="conteiner">
+    <div class="container">
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
